@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando API ViaCep</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="conteudoFixo"></div>
+    <h1>Consultando Endereço ViaCep</h1>
+    <label>Informe o seu Cep:</label>
+    <input type="number" id="cep">
+    <button onclick="consultaEndereco()">Consultar</button>
+    <div id="resultado">
+        <p>Resultado:</p>
+    </div>
+    <button id="salvar-btn" onclick="salvarEndereco()" disabled>Salvar</button>
+    <div class="saved-addresses" id="saved-addresses">
+        <h2>Endereços Salvos:</h2>
+        <ul id="listaEnderecos"></ul>
+    </div>
+    <script src="java/java.js"></script>
+</body>
+</html>
